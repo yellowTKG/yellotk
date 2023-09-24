@@ -1,0 +1,17 @@
+<header id="tk-header-template" class="tk-page-header tk-wrapper">
+    <nav>
+        <ul class="tk-main-nav">
+            <li id="logout"><a href="./index.html">Logout</a></li>
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menuf</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    // ログアウト処理
+    const logout = document.getElementById("logout")
+    logout.addEventListener("click", () => {
+        document.cookie = "login=; max-age=0"; // login cookie を削除
+    })
+</script>

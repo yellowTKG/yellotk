@@ -1,0 +1,18 @@
+.tk-target-scroll-show {
+    opacity: 1;
+}
+
+.tk-anime-scroll-show {
+    animation-name: tk-keyframe-scroll-show;
+    animation-duration: 2.5s;
+}
+
+@keyframes tk-keyframe-scroll-show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

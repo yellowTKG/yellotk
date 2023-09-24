@@ -1,0 +1,28 @@
+.tk-page-header{
+    display: flex;
+    justify-content: center;
+    background-image: url('../../img/login-logo.png');
+}
+
+.tk-wrapper{
+    max-width: 100vw;
+}
+
+.tk-main-nav{
+    display: flex; /*横並び*/
+    font-size: 1.25em;
+    margin-top: 34px;
+    list-style: none; /*リストの先頭文字「・」を非表示*/
+}
+
+.tk-main-nav li{
+    margin-left: 20px;
+}
+
+.tk-main-nav a{
+    color: #fff;
+}
+
+.tk-main-nav a:hover{
+    color: #0bd;
+}

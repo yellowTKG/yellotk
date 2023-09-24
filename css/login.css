@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 画面を左右に分ける */
+    place-content: center;
+}
+
+.loginL {
+    display: grid;
+    place-content: center; /* 子のコンテンツを上下中央に配置 */
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(36, 35, 35);
+
+    color: whitesmoke;
+
+}
+
+.loginR {
+    display: grid;
+    place-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(100, 98, 83);
+    background-image: url('../img/login-logo.svg');
+    background-size:cover; /*背景画像のサイズを画面いっぱいにする*/
+
+    overflow: hidden; /* 子コンテンツがはみ出た所は非表示 */
+}
+
+.loginL-items { 
+    display: grid;
+    place-content: center;
+}
+
+.loginL-items > button {
+    margin-top: 30px;
+}
+
+.login-reft-contents > img {
+    max-width: 100%; /*画像幅を最大でも 100% にする*/
+    height: 100%;
+}
+
+.error-input {
+    background-color: rgb(202, 136, 136);
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .loginL {
+        background-image: url('../img/login-logo.svg');
+        background-size:cover; /*背景画像のサイズを画面いっぱいにする*/
+    }
+    .loginR {
+        display: none;
+    }
+
+}
