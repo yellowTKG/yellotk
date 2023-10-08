@@ -3,6 +3,13 @@ body {
     font-family: "Yu Gothic", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Meiryo", sans-serif;
 }
 
+.tk-input-text {
+    outline: none;
+}
+
+.tk-input-text:focus {
+    background-color: rgb(250, 244, 163);
+}
 
 .tk-btn {
     border: none;

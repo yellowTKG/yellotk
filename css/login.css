@@ -17,6 +17,22 @@
 
 }
 
+.login-contents {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    transition: .5s;
+    overflow: hidden;
+    background-size: cover;
+    
+    /*背景をぼやかす*/
+    -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
 .loginR {
     display: grid;
     place-content: center;
