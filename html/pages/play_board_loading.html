@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayBoard</title>
+    <!-- hightlight -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+    <!-- <script>hljs.highlightAll();</script> -->
+
+    <!-- jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="/css/common/header_play_board.css">
+    <link rel="stylesheet" href="/css/play_board.css">
+    <link rel="stylesheet" href="/css/play_board_loading.css">
+    <!-- script -->
+    <script src="/js/common/statusCheck.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- 左サイドバー -->
+            <div id="tk-header-play-board"></div>
+        </div>
+        <!-- 右コンテンツ -->
+        <div class="contents">
+            <div id="loader">
+                <div class="sk-cube-grid">
+                    <div class="sk-cube sk-cube1"></div>
+                    <div class="sk-cube sk-cube2"></div>
+                    <div class="sk-cube sk-cube3"></div>
+                    <div class="sk-cube sk-cube4"></div>
+                    <div class="sk-cube sk-cube5"></div>
+                    <div class="sk-cube sk-cube6"></div>
+                    <div class="sk-cube sk-cube7"></div>
+                    <div class="sk-cube sk-cube8"></div>
+                    <div class="sk-cube sk-cube9"></div>
+                </div>
+            </div>
+            <div id="after-contents">
+                <div class="play-board-description">
+                    <h2>Loading 実装手順</h2>
+                    <ol class="play-board-ol">
+                        <li>ローディング時と，ローディング後に表示する div を用意</li>
+                        <li>表示・非表示のアニメーション css を用意</li>
+                        <li>画面ローディング時にアニメーションを追加する script を用意</li>
+                    </ol>
+                </div>
+                <div class="sk-cube-grid">
+                    <div class="sk-cube sk-cube1"></div>
+                    <div class="sk-cube sk-cube2"></div>
+                    <div class="sk-cube sk-cube3"></div>
+                    <div class="sk-cube sk-cube4"></div>
+                    <div class="sk-cube sk-cube5"></div>
+                    <div class="sk-cube sk-cube6"></div>
+                    <div class="sk-cube sk-cube7"></div>
+                    <div class="sk-cube sk-cube8"></div>
+                    <div class="sk-cube sk-cube9"></div>
+                </div>
+                <div class="play-board-description">
+                    <h2>参考</h2>
+                    <ul>
+                        <li>
+                            <a href="https://gimmicklog.com/jquery/278/">実装参考</a>
+                        </li>
+                        <li>
+                            <a href="https://tobiasahlin.com/spinkit/">アニメーション参考</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- script -->
+    <script src="/js/common/header_play_board.js"></script>
+    <script src="/js/play_board_loading.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayBoard</title>
+    <!-- jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="/css/common/header_play_board.css">
+    <link rel="stylesheet" href="/css/play_board.css">
+    <link rel="stylesheet" href="/css/play_board_modal.css">
+    <!-- script -->
+    <script src="/js/common/statusCheck.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- 左サイドバー -->
+            <div id="tk-header-play-board"></div>
+        </div>
+        <!-- 右コンテンツ -->
+        <div class="contents">
+            <!-- modal show button -->
+            <button id="modalOpen" class="button">Click Me</button>
+            <!-- modal contents -->
+            <div id="easyModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>モーダルの作り方</h1>
+                        <span class="modalClose">×</span>
+                    </div>
+                <div class="modal-body">
+                    <h2>
+                        HTML でやる事
+                    </h2>
+                    <p>
+                        モーダルで表示したい内容を記載<br>
+                        もちろん HTML の記法でぇ<br>
+                        ということで以下を用意
+                    </p>
+                    <ul>
+                        <li>モーダル全体の div (以降，親と呼びます)</li>
+                        <li>モーダルの中身のヘッダー div (以降，子頭と呼びます)</li>
+                        <li>モーダルの中身の div (以降，子と呼びます)</li>
+                    </ul>
+                    <h2>
+                        JavaScript でやる事
+                    </h2>
+                    <p>
+                        モーダル表示する時は，対象のスタイルに display の設定をする<br>
+                        非表示にする時は，対象のスタイルに display を none に設定する
+                    </p>
+                    <h2>
+                        CSS でやる事
+                    </h2>
+                    <p>
+                        親を最初，display を none で非表示にする<br>
+                        また，親の position を fixed で，top と left を 0 に設定する<br>
+                        ((0px, 0px) の位置から画面を作成したいため)<br>
+                        <br>
+                        親はモーダルの言わばの下地になるので，背景は半透明とかにしておく
+                    </p>
+                    <p>
+                        子が本命で，ここに内容を記載する
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="/js/common/header_play_board.js"></script>
+    <script src="/js/play_board_modal.js"></script>
+</body>
+</html>

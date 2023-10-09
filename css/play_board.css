@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    color: rgb(92, 91, 91);
 }
 .container {
     display: grid;
@@ -17,3 +18,18 @@ body {
     place-content: center;
 }
 
+.play-board-ol {
+    background: #ecdc7f;
+    border-radius :8px;
+    box-shadow :0px 0px 5px silver;
+    padding: 0.5em 0.5em 0.5em 2em;
+}
+
+.play-board-ol > li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+}
+
+.play-board-descriptiton {
+    display: grid;
+}
