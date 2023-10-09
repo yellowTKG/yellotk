@@ -48,9 +48,14 @@
   
   .modal-header {
     background: lightblue;
-    padding: 3px 15px;
     display: flex;
     justify-content: space-between; /* タイトルを左端，×を右端に設定している箇所 */
+    position: fixed;
+    width: 50%;
+  }
+
+  .modal-body {
+    margin-top: 60px;
   }
   
   .modalClose {
